@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<header class="{{page.bannerclass}}">
+  <div class="island-1-2">
+    <a href="{{site.baseurl}}/">
+      <img class="nav-logo" src="{{site.baseurl}}/images/logo-white-bg.svg">
+    </a>
+  </div>
+  <h1 class="banner-h1 island-1-2 left push-0">{{page.header}}</h1>
+  <div class="text-right">
+    <input type="checkbox" class="nav-check hide-custom-input" id="nav-check">
+    <label class="nav-label" for="nav-check">
+      <img class="sandwich" src="{{site.baseurl}}/images/sandwich.png" alt="">
+    </label>
+    <nav class="nav">
+      <ul class="list-group island-1-2">
+        <li>
+          <a class="block island-1-2" href="{{site.baseurl}}/nocturnalgg">NocturnalGG</a>
+        </li>
+        <li>
+          <a class="block island-1-2" href="{{site.baseurl}}/illustrations">Illustrations</a>
+        </li>
+        <li>
+          <a class="block island-1-2" href="{{site.baseurl}}/logos">Socials & Logos</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+{{content}}

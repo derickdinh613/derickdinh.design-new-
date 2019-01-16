@@ -1,0 +1,268 @@
+html {
+  font-family: cubano, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f95353;
+}
+
+.broken {
+  color:#fff;
+  background-color: #f95353;
+}
+
+p {
+  font-family: Open Sans, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.icon-list a {
+  color: #fff;
+}
+
+footer {
+  background-color: #333;
+  color: #ffff;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.banner {
+  background: url("../images/nocturnal-banner.jpg") center / cover no-repeat;
+}
+
+.banner-illustration {
+  background: url("../images/illustration-banner.jpg") center / cover no-repeat;
+}
+
+.banner-logos {
+  background: url("../images/logo-banner.jpg") center / cover no-repeat;
+}
+
+.nav-logo {
+  width: 7rem;
+}
+
+.sandwich {
+  width: 4rem;
+}
+
+.aboutme {
+  color: #000;
+}
+
+h1,
+h2 {
+  color: #fff;
+}
+
+.img {
+  height: 100vh;
+}
+
+.phrase {
+  color: #f95353;
+}
+
+.logo-head {
+  max-width: 100%;
+}
+
+.index-card {
+  background-color:#03030a;
+  overflow: hidden;
+}
+
+.index-card img {
+  transition: transform .5s;
+}
+
+.preview-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,0,0,.7);
+  transition: background-color .5s;
+}
+
+.preview-overlay + h2 {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.banner-h1 {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.preview-overlay-white {
+  background-color: rgba(255,255,255,.7);
+}
+
+.index-card h2 {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.index-card:hover h2 {
+  opacity: 1;
+}
+
+.index-card:hover .preview-overlay {
+  background-color: rgba(255,0,0,.0);
+}
+
+.index-card:hover img {
+  transform: scale(1.2);
+}
+
+.nav {
+  display: none;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-check {
+  /* Put the checkbox off the top of the screen */
+  position: absolute;
+  top: -3em;
+}
+
+.nav-check:checked ~ .nav-label {
+  background-color: grey;
+}
+
+.nav {
+  position: absolute;
+  right: 0;
+}
+
+.nav a {
+  background-color: red;
+  color: #fff;
+}
+
+.nav a:hover {
+  background-color: white;
+  color: red;
+}
+
+.logo-grid img {
+  max-width: 15rem;
+  display: inline-block;
+}
+
+.logo-grid .unit:nth-child(odd) {
+  text-align: center;
+}
+
+.examples .unit:nth-child(even) {
+  background-color: #FFC97B;
+  color: #fff;
+  position: relative;
+}
+
+.examples-illustrations .unit:nth-child(even) {
+  background-color: transparent;
+}
+
+.examples p {
+  max-width: 20em;
+  margin: 0 auto;
+}
+
+/* .examples .unit:nth-child(even)::after {
+  content: ' ';
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: #FFC97B;
+  z-index: -1;
+} */
+
+.examples .unit:nth-child(4)::after,
+.examples .unit:nth-child(8)::after,
+.examples .unit:nth-child(12)::after {
+  left: auto;
+  right: 0;
+}
+
+.bg-yellow {
+  background-color: #FFC97B;
+  color: #fff;
+}
+
+.bg-black {
+  background-color: #333;
+  color: #fff;
+}
+
+.examples-illustrations .unit:nth-child(even) > div {
+  background-color: #3B5998;
+}
+
+.examples-illustrations .unit:nth-child(even)::after {
+  background-color: #3B5998;
+}
+
+.examples-logos .unit:nth-child(even) {
+  background-color: #333;
+}
+
+.examples-logos .unit:nth-child(even)::after {
+  background-color: #333;
+}
+
+.bg-blue {
+  background-color: #3B5998;
+  color: #fff;
+}
+
+.svg {
+  color: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+  footer {
+    text-align: left;
+  }
+
+  .aboutme {
+    font-size: .8889rem;
+    line-height: 1.2rem;
+  }
+
+  .icon-list {
+    text-align: right;
+  }
+
+}
+
+@media only screen and (min-width: 25em) {
+
+  .logo-head {
+    max-width:100%;
+
+}
+
+.noct-2016 {
+  max-width:90%;
+}
+
+.email-colour {
+  color:#f95353;
+}

@@ -1,0 +1,60 @@
+repo: 'portfolio'
+
+inherit:
+  - naming-restrict-live
+  - git-10
+namingIgnore:
+  - 'CNAME'
+  - '_config.yml'
+
+allFiles:
+  files:
+    smushed: true
+  md:
+    valid: true
+  yml:
+    valid: true
+
+files:
+  - path: 'favicon.ico'
+  - path: 'favicon-196.png'
+    minWidth: 196
+    maxWidth: 196
+    minHeight: 196
+    maxHeight: 196
+  - directory: 'images'
+
+  - path: 'index.html'
+    smushed: false
+  - path: 'CNAME'
+
+  - path: 'sitemap.xml'
+    smushed: false
+    search:
+      - '\<\?xml version\=\"1\.0\" encoding\=\"UTF-8\"\?\>'
+      - '\<urlset xmlns\=\"http\:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9\"\>'
+      - '\<url\>'
+      - '\<loc\>'
+
+  - path: 'robots.txt'
+    smushed: false
+    search:
+      - '\# (www\.)?robotstxt\.org'
+      - 'Sitemap: https?://[^/]+/sitemap.xml'
+      - 'User-Agent\: \*'
+      - 'Disallow\:'
+
+  - path: 'humans.txt'
+    smushed: false
+    search:
+      - '\# humanstxt\.org'
+      - '\# TEAM'
+      - '\# THANKS'
+
+md:
+  - path: 'README.md'
+
+yml:
+  - path: '_config.yml'
+    search:
+      - 'permalink: pretty'
